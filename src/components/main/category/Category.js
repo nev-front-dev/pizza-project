@@ -1,9 +1,14 @@
 import React from 'react';
 
 import "./category.scss";
-import SortArrow from "../../../assets/img/sort-arrow.svg";
+import Sort from '../../sort/Sort';
 
 const Category = ({items}) => {
+  const sortItems = [
+    "popular",
+    "coast",
+    "alphabet"
+  ]
     const [activeItem, setActiveItem] = React.useState(null)
 
     const onSelectItem = (idx) => {
@@ -26,14 +31,7 @@ const Category = ({items}) => {
                     >{item}</li>
                 )}
             </ul>
-            <div className="header__sort">
-                <img 
-                    className="header__sort-img" 
-                    src={SortArrow}
-                    alt="sort-arrow"
-                />
-                    Sort by: <span>popular</span>
-            </div>
+            <Sort sortItems={sortItems}/>
         </nav>
     );
 }

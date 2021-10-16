@@ -1,13 +1,15 @@
 import React from 'react';
 
-import Header from "./components/header/Header"
-import Main from "./components/main/Main";
+import Header from "./components/header/Header";
+import {Home, Cart} from "./pages";
+import {Route} from "react-router-dom";
 
 const App = () => {
     return (
         <div className="app">
             <Header/>
-            <Main/>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/cart" component={Cart}/>
         </div>
     );
 }
