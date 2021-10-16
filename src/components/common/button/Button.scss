@@ -1,0 +1,26 @@
+.button__inner {
+    background-color: #FE5F1E;
+    border: none;
+    border-radius: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 1.5rem 2.3rem;
+    img {
+        position: relative;
+        top: 0.2rem;
+    }
+}
+.button__summa,
+.button__currency,
+.button__number {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}

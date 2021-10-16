@@ -1,0 +1,110 @@
+.pizzas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and(max-width: 375px) {
+     justify-content: center;
+    }
+}
+.pizzas__item {
+    border-radius: 0.4rem;
+    flex: 0 0 28rem;
+    min-height:100%;
+    padding: 0.5rem;
+}
+.pizzas__image {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+}
+.pizzas__name {
+    color: #000000;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin: 0 0 1rem 0;
+}
+.pizzas__description {
+    background-color: #F3F3F3;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.pizza__change {
+    span {
+        border-radius: 0.5rem;
+        color: #2C2C2C;
+        cursor: pointer;
+        display: inline-block;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        text-align: center;
+        letter-spacing: 0.015em;
+        margin: 0.5rem;
+        padding: 0.7rem 1.4rem;
+        &:hover {
+            background-color:#fff;
+        }
+    }
+}
+.pizza__crust {
+    display: flex;
+    span {
+        width: 50%;
+    }
+}
+.pizza__size {
+    display: flex;
+    span {
+        width: 33.333%;
+    }
+}
+.pizza__order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.7rem 0 5rem 0;
+}
+.pizza__coast {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.015em;
+    color: #000000;
+}
+.pizza__add-btn {
+    background-color: transparent;
+    border: 0.1rem solid #EB5A1E;
+    border-radius: 3rem;
+    color: #EB5A1E;
+    cursor: pointer;
+    padding: 0.9rem 1.5rem;
+    &:hover {
+        background-color: #EB5A1E;
+        color: #fff;
+        .pizza__add-number {
+            background-color: #fff;
+            color: #EB5A1E;
+        }
+    }
+}
+.pizza__add-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin: 0 0.9rem 0 0;
+}
+.pizza__add-number {
+    background-color: #EB5A1E;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    position: relative;
+    top: -0.2rem;
+}
